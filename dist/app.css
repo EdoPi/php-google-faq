@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #55595E;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.nav {
+  width: 100%;
+}
+.nav-logo {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo > .logo {
+  display: flex;
+  align-items: center;
+}
+.nav-logo > .logo > li {
+  padding-right: 5px;
+}
+.nav-logo > .logo > li > img {
+  width: 75px;
+  vertical-align: middle;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.nav-logo > .logo > li > h1 {
+  color: #55595E;
+  font-weight: 400;
+}
+.nav-logo > .account {
+  display: flex;
+  align-items: center;
+}
+.nav-logo > .account > li {
+  color: #55595E;
+  padding-right: 20px;
+}
+.nav-logo > .account > li > i {
+  font-size: 18px;
+}
+.nav-logo > .account > li > span {
+  width: 50px;
+  height: 50px;
+  border-radius: 55%;
+  color: white;
+  background-color: #6F0093;
+  padding: 8px 12px;
+}
+.nav-menu {
+  width: 100%;
+  margin-top: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.nav-menu > ul {
+  display: flex;
+}
+.nav-menu > ul > li {
+  padding-left: 20px;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.container .content {
+  padding-bottom: 50px;
+}
+.container .content > h1 {
+  padding-bottom: 20px;
+}
