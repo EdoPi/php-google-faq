@@ -1,3 +1,5 @@
+$textcolor : #55595E;
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +12,7 @@ ul{
 
 a{
     text-decoration: none;
-    color:#55595E;
+    color: $textcolor;
 }
 
 body{
@@ -42,7 +44,7 @@ body{
                 }
 
                 > h1{
-                    color: #55595E ;
+                    color: $textcolor ;
                     font-weight: 400;
                 }
             }
@@ -52,7 +54,7 @@ body{
             display: flex;
             align-items: center;
             > li {
-                color: #55595E;
+                color: $textcolor;
                 padding-right: 20px;
 
                 >i{
@@ -75,13 +77,31 @@ body{
         width: 100%;
         margin-top: 20px;
         border-bottom: 1px solid #ccc ;
-        padding-bottom: 10px;
         
         > ul {
             display: flex;
 
             >li{
                 padding-left: 20px;
+                padding-bottom: 10px;
+                
+
+                > .active{
+                    color: blue;
+                    height: 100%;
+                    position: relative;
+
+                    &::after{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 80%;
+                        height: 3px;
+                        background-color: blue;
+                        bottom: -10px;
+                        left: 10px;
+                    }
+                }
             }
         }
     }
@@ -94,9 +114,18 @@ body{
 
     .content{
         padding-bottom: 50px;
+        color: $textcolor;
 
         > h1{ 
             padding-bottom: 20px;
+            color: #35383A;
+        }
+
+        > p{
+            line-height: 30px;
+            font-size: 14px;
+
+           
         }
     }
 
